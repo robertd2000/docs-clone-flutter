@@ -1,0 +1,9 @@
+{
+  "installed": {
+    "client_id": "499719605031-ej6u5gjeqhdiech7v4ei62r1drb3e2i0.apps.googleusercontent.com",
+    "project_id": "docs-clone-366320",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs"
+  }
+}
