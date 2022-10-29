@@ -8,7 +8,11 @@ export const createUser = async (req, res) => {
       user = await User.create({ name, email, profilePic })
       await user.save()
     }
-    res.json({ user })
+    res.status(200).json({ user })
     console.log('dfe')
-  } catch (e) {}
+  } catch (e) {
+    res.status(500).json({
+      error: e.message,
+    })
+  }
 }

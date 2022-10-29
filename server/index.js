@@ -1,12 +1,16 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
+
 import { connect } from './db.config.js'
 import { authRouter } from './routes/auth.js'
 
 dotenv.config()
+
 const PORT = process.env.PORT | 3001
 const app = express()
 
+app.use(cors())
 app.use(express.json())
 app.use(authRouter)
 
